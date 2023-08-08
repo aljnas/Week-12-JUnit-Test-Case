@@ -28,8 +28,9 @@ import org.junit.jupiter.params.provider.MethodSource;
 					  
 			           
 			            Arguments.arguments(3, 6, 9, false),
-			           Arguments.of(5, 2, 7, false) 
-			            
+			           Arguments.of(5, 2, 7, false), 
+			           Arguments.arguments(1, 2, 3, false) 
+			         //  Arguments.arguments(1, 2, 3, true)
 			        );
 			    }
 		public static Stream<Arguments>argumentsForRestPositive() {
@@ -38,8 +39,8 @@ import org.junit.jupiter.params.provider.MethodSource;
 					
 					  
 			           
-			            Arguments.arguments(14, 7, 0, true)
-			          // Arguments.of(0, 0, 0, false) 
+			            Arguments.arguments(14, 7, 0, true),
+			           Arguments.of(-7, -70, 0, false) 
 			            
 			        );
 			    }
