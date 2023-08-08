@@ -1,0 +1,38 @@
+package com.promineotech;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.provider.Arguments;
+
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import java.util.stream.Stream;
+
+import org.junit.jupiter.api.BeforeEach;
+class TestDemoJUnitTestTest {
+
+	@BeforeEach
+	void setUp() throws Exception {
+		  TestDemo testDemo = new TestDemo();
+	}
+	
+	public static Stream<Arguments>argumentsForRestPositive(int a, int b, int expect,boolean d) {
+		
+		return Stream.of(Arguments.arguments(8, 4, 4,false),
+				
+				  
+		           
+		            Arguments.arguments(12, 7, 5, true)
+		          
+		            
+		        );
+		    }
+
+	@Test
+	 void assertThatPairsOfPositiveNumbersAreMultiplyCorrectly() {
+        TestDemo testDemo = new TestDemo();
+		assertThat(testDemo.restPositive(4, 5)).isEqualTo(1);
+        assertThat(testDemo.restPositive(14, 7)).isEqualTo(7);		}
+
+	}
+
+

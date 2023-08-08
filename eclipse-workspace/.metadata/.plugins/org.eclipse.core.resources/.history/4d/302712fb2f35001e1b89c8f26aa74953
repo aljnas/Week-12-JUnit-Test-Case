@@ -1,0 +1,38 @@
+package com.promineotech;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.provider.Arguments;
+
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import java.util.stream.Stream;
+
+import org.junit.jupiter.api.BeforeEach;
+class TestDemoJUnitTestTest {
+
+	@BeforeEach
+	void setUp() throws Exception {
+		  TestDemo testDemo = new TestDemo();
+	}
+	
+	public static Stream<Arguments>argumentsForMultiplyPositive() {
+		
+		return Stream.of(Arguments.arguments(2, 4, 8,false),
+				
+				  
+		           
+		            Arguments.arguments(3, 7, 21, true),
+		          
+		            
+		        );
+		    }
+
+	@Test
+	 void assertThatPairsOfPositiveNumbersAreMultiplyCorrectly() {
+        TestDemo testDemo = new TestDemo();
+		assertThat(testDemo.multiply(4, 5)).isEqualTo(20);
+        assertThat(testDemo.multiply(3, 7)).isEqualTo(21);		}
+
+	}
+
+

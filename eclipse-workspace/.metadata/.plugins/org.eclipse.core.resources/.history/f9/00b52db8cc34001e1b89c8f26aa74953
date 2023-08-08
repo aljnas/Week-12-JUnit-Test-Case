@@ -1,0 +1,14 @@
+package com.promineotech;
+
+public class TestDemo {
+	public int addPositive(int a, int b, int c) {
+        if (a >= 0 && b >= 0) {
+        	int c= a + b;
+        	System.out.println(c);
+        	return c;
+        } else {
+            throw new IllegalArgumentException("Both parameters must be positive!");
+        }
+    }
+
+}
