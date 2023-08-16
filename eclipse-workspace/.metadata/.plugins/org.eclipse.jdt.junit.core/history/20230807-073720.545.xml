@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="TestDemoJUnitTestTest" project="unit-test-assignment" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="com.promineotech.TestDemoJUnitTestTest" time="0.057" displayname="TestDemoJUnitTestTest" uniqueid="[engine:junit-jupiter]/[class:com.promineotech.TestDemoJUnitTestTest]">
-    <testcase name="assertThatPairsOfPositiveNumbersAreMultiplyCorrectly" classname="com.promineotech.TestDemoJUnitTestTest" time="0.057" displayname="assertThatPairsOfPositiveNumbersAreMultiplyCorrectly()" uniqueid="[engine:junit-jupiter]/[class:com.promineotech.TestDemoJUnitTestTest]/[method:assertThatPairsOfPositiveNumbersAreMultiplyCorrectly()]"/>
-  </testsuite>
-</testrun>
