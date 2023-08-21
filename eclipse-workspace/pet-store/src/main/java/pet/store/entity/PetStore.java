@@ -23,7 +23,7 @@ public class PetStore {
  //Identifies the primary key for the pet_store table
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long petStoreId;
+	private Long petStoreId;
 	
 	private String petStoreName;
 	private String petStoreAddress;

@@ -18,7 +18,7 @@ public class Employee {
 	//Allows know the primary key for the employee table
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long employee;
+	private Long employeeId;
 	
 	private String employeeFirstName;
 	private String employeeLastName;

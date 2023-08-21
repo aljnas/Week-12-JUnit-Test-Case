@@ -21,7 +21,7 @@ public class Customer {
 	//Allows to know the primary key for the costumer table
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long customerId;
+	private Long customerId;
 		
     private String customerFirstName;
 	private String customerLastName;

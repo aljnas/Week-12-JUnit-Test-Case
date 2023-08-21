@@ -1,0 +1,27 @@
+package pet.store.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import pet.store.controller.model.PetStoreData;
+import pet.store.dao.PetStoreDao;
+
+@Service
+public class PetStoreService {
+	
+	@Autowired
+private PetStoreDao petStoreDao;
+
+	public PetStoreDao getPetStoreDao() {
+		return petStoreDao;
+	}
+
+	public void setPetStoreDao(PetStoreDao petStoreDao) {
+		this.petStoreDao = petStoreDao;
+	}
+
+	public PetStoreData savePetStore(PetStoreData petStoreData) {
+		
+		return pet;
+	}
+}
