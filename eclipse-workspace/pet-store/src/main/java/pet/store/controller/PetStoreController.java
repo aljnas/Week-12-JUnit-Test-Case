@@ -16,6 +16,7 @@ import pet.store.service.PetStoreService;
 @RestController
 @RequestMapping("/pet_store")
 @Slf4j
+//Where  Input or output HTTP enter or leave the application.
 public class PetStoreController {
 
 	@Autowired
@@ -31,14 +32,15 @@ public class PetStoreController {
 		return petStoreService.savePetStore(petStoreData);
 	}
 	
-	@PutMapping("/pet_store/{petStoreId}")
+	@PutMapping("/{petStoreId}")
 	public PetStoreData updatePetStore(@PathVariable Long petStoreId, @RequestBody PetStoreData petStoreData) {
 		
 		
 		petStoreData.setPetStoreId(petStoreId);
-		log.info("Updating pet store {]",petStoreData);
+		log.info("Updating pet store {}",petStoreData);
 		
 		return petStoreService.savePetStore(petStoreData);
+		
 	}
 		
 }		

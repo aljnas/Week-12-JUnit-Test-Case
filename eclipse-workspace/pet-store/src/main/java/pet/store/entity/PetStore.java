@@ -34,16 +34,20 @@ public class PetStore {
 	
 	//Many to many relationship with customer.Joins the tables by table,
 	//pet_store_customer via pet_store_id and custumer_id
-	@EqualsAndHashCode.Exclude
-	@ToString.Exclude
+	
+
 	@ManyToMany(cascade = CascadeType.PERSIST)
 	@JoinTable(name = "pet_store_customer", joinColumns = @JoinColumn(name = "pet_store_id"), inverseJoinColumns = @JoinColumn(name = "customer_id"))
-	private Set<Customer>customers = new HashSet<>();
+	
+
 	
 	//One to many relationship with employee table.Because one pet store has multiple employees.
 	@EqualsAndHashCode.Exclude
 	@ToString.Exclude
+	private Set<Customer>customers = new HashSet<>();
 	@OneToMany(mappedBy = "petStore",cascade = CascadeType.ALL, orphanRemoval = true)
+	@EqualsAndHashCode.Exclude
+	@ToString.Exclude
 	private Set<Employee>employees = new HashSet<>();
 }
 	

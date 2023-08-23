@@ -22,9 +22,7 @@ public class PetStoreService {
 		PetStore petStore = findOrCreatePetStore(petStoreId);
 		
 		copyPetStoreFields(petStore, petStoreData);
-		
-		//PetStore dbPetStore = petStoreDao.save(petStore);
-		
+	
 		return new PetStoreData(petStoreDao.save(petStore));
 	}
 
@@ -42,7 +40,6 @@ public class PetStoreService {
 	}
 
 	private PetStore findOrCreatePetStore(Long petStoreId) {
-	//	PetStore petStore;
 		
 		if(Objects.isNull(petStoreId)) {
 			return  new PetStore();

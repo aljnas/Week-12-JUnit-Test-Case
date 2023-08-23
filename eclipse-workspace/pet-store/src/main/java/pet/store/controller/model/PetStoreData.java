@@ -29,7 +29,6 @@ private Long petStoreId;
 	public PetStoreData(PetStore petStore) {
 		petStoreId = petStore.getPetStoreId();
 		petStoreName = petStore.getPetStoreName();
-		petStoreId = petStore.getPetStoreId();
 		petStoreAddress = petStore.getPetStoreAddress();
 		petStoreCity = petStore.getPetStoreCity();
 		petStoreState = petStore.getPetStoreState();
@@ -47,50 +46,3 @@ private Long petStoreId;
 		 }
 	}
 }
-/*@Data
-@NoArgsConstructor
-static class PetStoreEmployee {
-private long employeeId;
-	
-	private String employeeFirstName;
-	private String employeeLastName;
-	private String employeePhone;
-	private String employeeJobTittle;
-	
-
-public PetStoreEmployee(Employee employee) {
-		employeeId = employee.getEmployeeId();
-		employeeFirstName = employee.getEmployeeFirstName();
-		employeeLastName = employee.getEmployeeLastName();
-		employeePhone = employee.getEmployeePhone();
-		employeeJobTittle = employee.getEmployeeJobTittle();
-	}
-
-}
-
-
-@Data
-@NoArgsConstructor
-static class PetStoreCustomer {
-
-private long customerId;
-	
-    private String customerFirstName;
-	private String customerLastName;
-	private String customerEmail;
-	
-}
-		
-	
-	public PetStoreCustomer(Customer customer) {
-		customerId = customer.getCustomerId();
-		customerFirstName = customer.getCustomerFirstName();
-	    customerLastName = customer.getCustomerLastName();	
-	    customerEmail = customer.getCustomerEmail();
-	
-	
-	}
-	
-
-	}
-}*/

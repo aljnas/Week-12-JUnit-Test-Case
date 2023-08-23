@@ -17,8 +17,7 @@ public class GlobalErrorHandler {
 	@ResponseStatus(code = HttpStatus.NOT_FOUND)
 	public Map<String, String> handleNoSuchElementException(NoSuchElementException ex) {
 	    log.error("NoSuchElementException occurred: {}", ex.toString());
-	   // Map<String, String> errorResponse = new HashMap<>();
-	   // errorResponse.put("error", "Element not found");
+	   
 	    return Map.of("message",ex.toString());
 	}
 
